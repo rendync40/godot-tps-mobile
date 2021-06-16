@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://TouchScreenButton.gd" type="Script" id=1]
+[ext_resource path="res://asset/Radius.png" type="Texture" id=2]
+[ext_resource path="res://asset/Button.png" type="Texture" id=3]
+
+[node name="Joystick" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 157, 424 )
+texture = ExtResource( 2 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Sprite"]
+position = Vector2( -14, -23 )
+normal = ExtResource( 3 )
+script = ExtResource( 1 )
